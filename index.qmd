@@ -1,5 +1,5 @@
 ---
-title: "CLaROS"
+title: "FOSIL"
 image: profile.jpg
 about:
   template: jolla
