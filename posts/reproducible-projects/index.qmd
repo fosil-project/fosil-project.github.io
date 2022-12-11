@@ -1,0 +1,10 @@
+---
+title: "Reproducible projects"
+author: "TBD"
+date: "2022-11-23"
+categories: [news, code, analysis]
+image: "image.jpg"
+---
+
+- RStudio/posit projects
+- Code ocean
