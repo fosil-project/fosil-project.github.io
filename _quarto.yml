@@ -5,6 +5,8 @@ project:
     - "*.qmd"
   resources: 
     - "scripts/"
+    - "data/"
+    - "img/"
 
 website:
   title: "Fostering Open Science in Linguistics"
@@ -13,6 +15,7 @@ website:
       - tutorials.qmd
       - icon: github
         href: https://github.com/
+
 format:
   html:
     theme: simplex
