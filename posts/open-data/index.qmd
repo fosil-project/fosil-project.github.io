@@ -3,7 +3,7 @@ title: "Open data"
 author: "TBD"
 date: "2022-11-23"
 categories: [news, code, analysis]
-image: "image.jpg"
+image: "../../fosil-project.png"
 ---
 
 This is a post with executable code.

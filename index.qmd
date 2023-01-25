@@ -1,92 +1,21 @@
 ---
 title: "FOSIL"
-image: profile.jpg
-toc: false
+image: fosil-project.png
+about:
+  template: trestles
+  links:
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com
+    - icon: github
+      text: Github
+      href: https://github.com
 ---
 
-```{r}
-#| label: setup
-#| warning: false
-#| message: false
-#| echo: false
 
-library("tidyverse")
-library("ggwordcloud")
-library("rvest")
+Info here
 
-```
 
-```{r}
-#| label: lang-list
-#| echo: false
-#| eval: false
-
-url <- "https://owlcation.com/humanities/How-to-say-Hello-in-100-languages"
-
-greetings <- 
-  bind_rows(
-    url %>%
-      read_html() %>%
-      html_nodes(xpath = '//*[@id="main-content"]/section/article/div/div/section/div[1]/div[3]/div[2]/table') %>%
-      html_table() %>% 
-      bind_rows(), 
-    url %>% 
-      read_html() %>% 
-      html_nodes(xpath = '//*[@id="main-content"]/section/article/div/div/section/div[1]/div[3]/div[3]/table') %>% 
-      html_table() %>% 
-      bind_rows(), 
-    url %>% 
-      read_html() %>% 
-      html_nodes(xpath = '//*[@id="main-content"]/section/article/div/div/section/div[1]/div[3]/div[4]/table') %>% 
-      html_table() %>% 
-      bind_rows()
-  ) %>% 
-  janitor::clean_names() %>% 
-  mutate(language = na_if(language, "")) %>% 
-  fill(language, .direction = "down") %>% 
-  mutate(
-    x = rnorm(n = nrow(.), mean = 0, sd = 0.5), 
-    y = rnorm(n = nrow(.), mean = 0, sd = 0.5), 
-    size = rnorm(n = nrow(.), mean = 100, sd = 20.5), 
-    angle = 45 * sample(-2:2, n(), replace = TRUE, prob = c(1, 1, 4, 1, 1))
-  ) %>% 
-  write_csv(here::here("data", "greetings.csv"))
-
-```
-
-```{r}
-#| label: load-data
-#| echo: false
-#| warning: false
-#| message: false
-greetings <- read_csv(here::here("data", "greetings.csv"))
-```
-
-```{r}
-#| label: lang-plot
-#| warning: false
-#| message: false
-#| echo: false
-#| fig.align: "center"
-#| out.width: "75%"
-
-# Wordcloud info: 
-# https://cran.r-project.org/web/packages/ggwordcloud/vignettes/ggwordcloud.html
-
-greetings %>% 
-  #sample_n(50) %>% 
-  ggplot() + 
-  aes(label = greeting, angle = angle, size = size, color = language) + 
-  geom_text_wordcloud_area(
-    eccentricity = 1, 
-    shape = "circle", 
-   # rm_outside = TRUE, 
-   # mask = png::readPNG(
-   #   system.file("extdata/hearth.png", package = "ggwordcloud", mustWork = TRUE)
-   # )
-  ) +
-  scale_size_area(max_size = 4) + 
-  scale_color_viridis_d() + 
-  theme_void()
-
-```
