@@ -1,6 +1,6 @@
 ---
 title: "FOSIL"
-image: fosil-project.png
+image: ./img/fosil-project.png
 about:
   template: trestles
   links:

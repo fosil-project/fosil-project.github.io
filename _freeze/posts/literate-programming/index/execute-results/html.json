@@ -1,7 +1,7 @@
 {
-  "hash": "ad82c897de70465ceb7175cbb4fefe03",
+  "hash": "d37f83e8e077d71e9ab5521bf1cb4c54",
   "result": {
-    "markdown": "---\ntitle: \"Literate programming\"\nauthor: \"TBD\"\ndate: \"2022-11-23\"\ncategories: [news, code, analysis]\nimage: \"../../fosil-project.png\"\n---\n\n\nThis is a post with executable code.\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] 2\n```\n:::\n:::\n",
+    "markdown": "---\ntitle: \"Literate programming\"\nauthor: \"TBD\"\ndate: \"2022-11-23\"\ncategories: [news, code, analysis]\nimage: \"../../img/fosil-project.png\"\n---\n\n\nThis is a post with executable code.\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] 2\n```\n:::\n:::\n",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"
