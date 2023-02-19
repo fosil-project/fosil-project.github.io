@@ -1,0 +1,11 @@
+---
+title: "About"
+image: ./img/fosil-project.png
+about:
+  template: trestles
+---
+
+
+Info here
+
+

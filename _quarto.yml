@@ -12,6 +12,7 @@ website:
   title: "Fostering Open Science in Linguistics"
   navbar:
     right:
+      - about.qmd
       - tutorials.qmd
       - icon: github
         href: https://github.com/
