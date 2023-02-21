@@ -4,7 +4,7 @@ img_link <- "https://raw.githubusercontent.com/jvcasillas/hex_stickers/master/st
 # download file
 download.file(
   url = img_link, 
-  destfile = here::here("fosil-project.png"), 
+  destfile = here::here("img", "fosil-project.png"), 
   method = "curl", 
   quiet = FALSE, 
   mode = "w", 

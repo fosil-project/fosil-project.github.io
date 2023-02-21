@@ -2,15 +2,14 @@
   {
     "listing": "/tutorials.html",
     "items": [
+      "/posts/what-is-open-science/index.html",
       "/posts/literate-programming/index.html",
       "/posts/open-data/index.html",
       "/posts/positionality-statements/index.html",
       "/posts/preprints/index.html",
       "/posts/preregistration/index.html",
       "/posts/registered-reports/index.html",
-      "/posts/reproducible-code/index.html",
-      "/posts/reproducible-projects/index.html",
-      "/posts/what-is-open-science/index.html"
+      "/posts/reproducible-code-projects/index.html"
     ]
   }
 ]
