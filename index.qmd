@@ -1,15 +1,40 @@
 ---
 title: ""
+page-layout: full
 ---
 
-<br><br><br>
+<br>
 
 ```{r}
 #| label: logo
 #| fig.align: center
 #| out.width: "50%"
 #| echo: false
+#| eval: false
 
 knitr::include_graphics(here::here("img", "fosil_wug_black.png"))
 ```
 
+<!--
+https://stackoverflow.com/questions/7844399/responsive-image-map
+-->
+
+<div style="position: relative;">
+
+  <img src="./img/fosil_nav.png" style="width: 100%; height: auto;">
+  
+  <a href="posts/reproducible-code-projects/index.html"><div style="position: absolute; left: 2%; top: 55%; width: 22%; height: 13%; background-color: rgba(0, 0, 0, 0);"></div></a>
+
+  <a href="posts/positionality-statements/index.html"><div style="position: absolute; left: 3%; top: 35%; width: 22%; height: 13%; background-color: rgba(0, 0, 0, 0);"></div></a>
+
+  <a href="posts/registered-reports/index.html"><div style="position: absolute; left: 17%; top: 13%; width: 22%; height: 13%; background-color: rgba(0, 0, 0, 0);"></div></a>
+
+  <a href="posts/preprints/index.html"><div style="position: absolute; left: 40%; top: 3%; width: 22%; height: 13%; background-color: rgba(0, 0, 0, 0);"></div></a>
+
+  <a href="posts/preregistration/index.html"><div style="position: absolute; left: 67%; top: 9%; width: 22%; height: 13%; background-color: rgba(0, 0, 0, 0);"></div></a>
+
+  <a href="posts/literate-programming/index.html"><div style="position: absolute; left: 73%; top: 36%; width: 22%; height: 13%; background-color: rgba(0, 0, 0, 0);"></div></a>
+
+  <a href="posts/open-data/index.html"><div style="position: absolute; left: 76%; top: 55%; width: 22%; height: 13%; background-color: rgba(0, 0, 0, 0);"></div></a>
+
+</div>
