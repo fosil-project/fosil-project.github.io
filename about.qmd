@@ -1,11 +1,22 @@
 ---
 title: "About"
 image: ./img/fosil-project.png
+page-layout: full
 about:
-  template: broadside
+  id: hero-heading
+  template: trestles
+  image-width: 22em
+  image-shape: rectangle
+  links:
+    - icon: twitter
+      text: twitter
+      href: https://twitter.com/fosil_project
+    - icon: github
+      text: Github
+      href: https://github.com/fosil-project
 ---
 
-
+<br>
 The purpose of this site is to help foster open science in linguistics (FOSIL).
 The early 2010's saw the reproducibility crisis take hold of the psychological sciences. 
 As a consequence, there's been a push for increased transparency and reproducible methodology to help mitigate the effects of questionable research practices. 
