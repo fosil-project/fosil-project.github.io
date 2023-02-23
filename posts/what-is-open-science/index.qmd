@@ -9,7 +9,7 @@ citation:
   url: https://FOSIL-project.github.io/what-is-open-science/index.html
 date: "2023-02-21"
 categories: [info]
-image: "../../img/fosil_wug.png"
+image: "open_science_wug.png"
 description: |
   A quick primer on Open Science and reproducible research.
 ---

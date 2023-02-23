@@ -1,9 +1,9 @@
 ---
-title: "Reproducible code"
+title: "Reproducible code/projects"
 author: "TBD"
 date: "2022-11-23"
 categories: [news, code, analysis]
-image: "../../img/fosil_wug.png"
+image: "reproducible_code_projects_wug.png"
 ---
 
 This is a post with executable code.
