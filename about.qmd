@@ -5,7 +5,7 @@ page-layout: full
 about:
   id: hero-heading
   template: trestles
-  image-width: 22em
+  image-width: 20em
   image-shape: rectangle
   links:
     - icon: twitter
