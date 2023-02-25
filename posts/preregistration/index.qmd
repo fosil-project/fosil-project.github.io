@@ -41,36 +41,32 @@ More concretely, we will cover the *who*, *why*, *what*, and *how* for preregist
 
 Everybody!
 Preregistration is an important practice for conducting open science and anyone interested in reducing the likelihood of committing questionable research practices (QRPs) and making their research more transparent should consider using them. 
-This tutorial focuses specifically on preregistration for researchers in any field of linguistics. 
+This tutorial focuses specifically on preregistration for researchers in any area of linguistics. 
 
 ## Why preregister your study?
 
-Researchers often have some degree of inherent flexibility in the process of designing and conducting research studies. 
-This concept is also known as researcher degrees of freedom. 
-With having the freedom to choose between various methods of collecting data and performing analyses, it can be easy to end up with false-positive results (i.e. an incorrect finding showing statistically significant result). 
-The purpose of preregisteration is to deter individuals from conducting questionable research practices (QRPs) either intentionally or unintentionally by requiring them to document various components of the study. 
-QRPs can lead to bias in the results, which can further lead to inaccurate conclusions. 
-An example of QRPs which can be avoided through preregistration is HARKing or hypothesizing after the results are known. 
-HARKing can be detrimental for research studies as it presents hypotheses determined after finding results as a hypothesis formed prior to the study. Another example of QRPs is p-hacking, where data is methodically excluded to result in a statistically significant result when there isn't an actual effect between the variables. 
+Researchers have to make critical choices throughout the process of designing and conducting research. 
+To give a concrete example, consider a phonotician interested in investigating lexical stress. 
+In this case, the researcher would likely focus on some acoustic correlates associated with stress, such as pitch, duration, and/or intensity. 
+Aside from choosing which acoustic correlate(s) to measure, she would also need to specify the domain in which these measurements are taken. 
+Is it the nucleus of the stressed/unstressed syllables? 
+Or perhaps the entire syllable? 
+Where exactly is the measurement taken? 
+The mid-point, perhaps? 
+Or maybe an average over the entire syllable?
+All of these choices can have crucial consequences on downstream analyses. 
+This type of inherent flexibility is referred to as researcher degrees of freedom. 
+The purpose of preregisteration is to deter individuals from QRPs, such as HARKing or p-hacking, by requiring them to document critical aspects of the study. 
 Preregistration avoids such practices because it forces researchers to record their hypotheses and methods prior to data collection. 
-Researchers can also determine stopping rule and exclusion principals in advance, so that there's less chance of p-hacking. 
-HARKing along with p-hacking lead to scientific studies being difficult or impossible to be reproduced. 
-Since reproducibility is an important part of the scientific process, not being able to reproduce results leads to theories building off on these papers to be questioned for their credibility. 
-By preregistering, we can ensure that results can be replicated due to derailed laid out information about data collection procedures. 
+
+<aside>
+For more information about QRPs see XXX.
+</aside>
+
 There are many additional benefits to preregistering studies. 
 Preregisteration can act as proof of confirmatory research for researchers, as it distinguishes decisions made before and after data collection. 
 Encouraging greater level of detail in preregistration also helps researchers to focus on conceptualizing their research prior to conducting it. 
 Having detailed preregistration also allows any issues to be discussed and sorted before data collection, which further eliminates any sources of error. 
-
-- Deter pele from QRPs
-    - Ex. HARKing and p-hacking
-    - Documenting researchers degree of freedom
-- Proof of confirmatory research: Distinguishes between decisions made before and after collecting data
-- Conceptualization stage: Very helpful because it forces researcher to plan out their studies
-    - Determine stopping rule and exclusion in advance
-    - Reproducibility because of detailed laid out information
-- Proofread: Any issues can be discussed and sorted out before data collection
-    - Eliminates sources of error 
 
 
 ## What should you pregister?
