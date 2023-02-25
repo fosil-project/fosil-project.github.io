@@ -26,27 +26,24 @@ code-link: true
 ---
 
 
-
 ## What is preregistration?
 
-Preregistration refers to a timestamped outline of a study which include components such as research questions, hypotheses, methods, and analysis. 
-Preregistration differs from other open science practices such as registered reports and preprints as it is registered in a repository prior to data collection and it isn’t peer reviewed. 
-Preregistration can vary a lot in detail; the simplest level with the least amount of detail can include just the hypothesis and a brief description of the methods, whereas more difficult levels with greater detail can include components such as writing analysis code beforehand in addition to the components from the simpler levels. 
-More information on the different components that can be included in preregistration will be mentioned in the following sections. 
+A preregistration is a timestamped document that includes details about a study, such as research questions, hypotheses, methods, and analytic strategies. 
+Preregistration differs from other open science practices, such as registered reports and preprints, in that it is written prior to data collection and is not peer reviewed. 
+The amount of detail included in a preregistration can vary. 
+In the simplest case, a preregistration can comprise merely a hypothesis or perhaps a brief description of the methods. 
+On the other extreme, a detailed preregistration can include code, power analyses, participant exclusion criteria, etc., in addition to the information described in the simple case. 
+In the following sections, we will provide more information about the different components that can be included in a preregistration with a specific focus on how preregistration can benefit linguistic research. 
+More concretely, we will cover the *who*, *why*, *what*, and *how* for preregistering your study in linguistics.
 
-- Timestamped outline including research questions, hypotheses, methods, and analysis
-- Needs to be before data collection
-- Can be in varying levels of detail
 
+## Who can benefit from preregistration?
 
-## Who is this for and how is it gonna be applied?
+Everybody!
+Preregistration is an important practice for conducting open science and anyone interested in reducing the likelihood of committing questionable research practices (QRPs) and making their research more transparent should consider using them. 
+This tutorial focuses specifically on preregistration for researchers in any field of linguistics. 
 
-Preregistration is an important practice in conducting open science, which anyone in academia conducting research can implement. 
-This tutorial will be focusing on preregistration specifically for researchers in any field of linguistics. 
-Many of the points such as "things to consider" and "How to preregister?" can be applied to other fields as well. 
-Topics covered in this section include 1. what is preregistration? 2. Why do we conduct preregistration? 3. Things to consider to preregister 4.  How to implement preregistration in linguistics? and 5. How to preregister?
-
-## Why do we do preregistration?
+## Why preregister your study?
 
 Researchers often have some degree of inherent flexibility in the process of designing and conducting research studies. 
 This concept is also known as researcher degrees of freedom. 
@@ -76,7 +73,7 @@ Having detailed preregistration also allows any issues to be discussed and sorte
     - Eliminates sources of error 
 
 
-## Things to consider
+## What should you pregister?
 
 ### Type of study
 
@@ -135,7 +132,7 @@ knitr::include_graphics("prereg2.png")
 
 
 
-## How can we make it?
+## How to preregister your study
 
 There are websites dedicated to Open Science practices. 
 OSF is one and it provide platform and/or template we can use. 

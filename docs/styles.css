@@ -10,7 +10,8 @@
 }
 
 .nav_wug:hover {
-  font-size: 1.6vw;;
+  font-size: 1.6vw;
+  color: #cc0033;
 }
 
 #nav_wug {
