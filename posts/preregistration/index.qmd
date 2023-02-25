@@ -56,54 +56,37 @@ The mid-point, perhaps?
 Or maybe an average over the entire syllable?
 All of these choices can have crucial consequences on downstream analyses. 
 This type of inherent flexibility is referred to as researcher degrees of freedom. 
-The purpose of preregisteration is to deter individuals from QRPs, such as HARKing or p-hacking, by requiring them to document critical aspects of the study. 
-Preregistration avoids such practices because it forces researchers to record their hypotheses and methods prior to data collection. 
+The purpose of preregisteration is to document all of these critical aspects of the study. 
+Furthermore, preregistration can deter individuals from QRPs, such as HARKing or p-hacking, by requiring them to explicitly state critical decisions in the research pipeline prior to ever collecting data.
 
 <aside>
-For more information about QRPs see XXX.
+For more information about QRPs and how they relate to the replicability crisis see [What is open science?](https://fosil-project.github.io/posts/what-is-open-science/).
 </aside>
 
 There are many additional benefits to preregistering studies. 
-Preregisteration can act as proof of confirmatory research for researchers, as it distinguishes decisions made before and after data collection. 
-Encouraging greater level of detail in preregistration also helps researchers to focus on conceptualizing their research prior to conducting it. 
-Having detailed preregistration also allows any issues to be discussed and sorted before data collection, which further eliminates any sources of error. 
-
+Preregistration can serve as proof one is engaging in confirmatory data analysis (as opposed to exploratory data analysis), as it establishes a timeline of decisions made before and after data collection. 
+Moreover, by including a greater level of detail in the preregistration, the researcher is forced to think about aspects of their study that might typically be left for a later stage, e.g., statistical analyses. 
+This necessarily requires the researcher to invest more time upfront, but often has the benefit of increasing the likelihood of discovering critical errors in the study design.
 
 ## What should you pregister?
 
-### Type of study
+In short, you can preregister anything that you think warrants being timestamped prior to conducting your study. 
+What exactly this entails will vary widely depending on your area of linguistics and the type of study you are conducting. 
+To illustrate, we'll consider a concrete example. 
 
-Just as we previously discussed, one of the primary purposes of preregistration is to distinguish between confirmatory research and exploratory research, therefore it can be the start-point of preregistration. 
-In addition, there are more types of study than the two we just mentioned, and it would be helpful to determine and preregister them before the beginning of the study, as it can be the methodological base for your study. 
-Here type of study does not refer to the branches of linguistic studies or specialized areas of linguistic studies: we use it to categorize the **methodology** and **purpose** of the studies. 
-In Figure 1 we listed some of the common types of study in linguistic research. 
-It is worth mentioning that often one study can fit into multiple types listed in Figure 1.
+Let's imagine you are a psycholinguist preparing an experiment using self-paced reading. 
+You might want to focus on the research questions, hypotheses, and critical details related to the methodology, such as who the participants are, how you plan to recruit them, how many you plan to recruit, etc. 
+You also might consider explaining what the critical variables are that you will manipulate with your design, what transformations you plan to perform on the data, and what modeling strategies you will use for statistical inferences. 
+All of these decisions, while important, might not be applicaple in every situation. 
+To summarize, the type of information included in a preregistration will likely be related to one of the following: 
 
+1. RQ/Hypotheses
+2. Method
+3. Analysis
 
-```{r}
-#| label: fig-study-types
-#| fig.cap: Need fig cap
-#| out.width: 100%
-#| echo: false
-
-knitr::include_graphics("prereg1.png")
-
-```
-
-
-
-### Parts to include in preregistration
-
-Moving forward we are going to discuss what content could be included in preregistration. 
-To put it simply, we can imagine it as a conference paper, or a research proposal, thus we have four components (Kathallawa et al, 2021):
-
-1. RQ 
-2. Hypotheses
-3. Method
-4. Analysis plan
-
-Again, we'd like to stress that, it may be overwhelming to incorporate all four of them if you are one step in the practice of Open Science, so feel free to pick what might be most relevant to your study to begin with, and maybe engage more when you feel more comfortable with this practice in the future. 
-Also, you can have maximum flexibility on the complexity of preregister each component. 
+Importantly, it may be overwhelming to incorporate all of them in your preregistration if you are just getting started in Open Science. 
+That's fine. 
+Feel free to pick what you think might be most relevant to your study to begin, and, with time and practice, you will get better at deciding what is relevant for your research. 
 
 ### Level of details
 
@@ -188,3 +171,26 @@ https://www.degruyter.com/document/doi/10.1515/ling-2019-0048/html?lang=en
 
 Reference
 Kathawalla, U. K., Silverstein, P., & Syed, M. (2021). Easing into open science: A guide for graduate students and their advisors. Collabra: Psychology, 7(1)
+
+
+
+
+
+<!--
+Just as we previously discussed, one of the primary purposes of preregistration is to distinguish between confirmatory research and exploratory research, therefore it can be the start-point of preregistration. 
+In addition, there are more types of study than the two we just mentioned, and it would be helpful to determine and preregister them before the beginning of the study, as it can be the methodological base for your study. 
+Here type of study does not refer to the branches of linguistic studies or specialized areas of linguistic studies: we use it to categorize the **methodology** and **purpose** of the studies. 
+In Figure 1 we listed some of the common types of study in linguistic research. 
+It is worth mentioning that often one study can fit into multiple types listed in Figure 1.
+-->
+
+```{r}
+#| label: fig-study-types
+#| fig.cap: Need fig cap
+#| out.width: 100%
+#| echo: false
+#| eval: false
+
+knitr::include_graphics("prereg1.png")
+
+```
