@@ -1,7 +1,7 @@
 ---
 title: "Literate programming"
 author: 
-  - Kyle Parish
+  - Kyle Parrish
   - url: https://kparrish92.github.io/
   - affiliation: Rutgers University
   - affiliation-url: www.rutgers.edu
@@ -145,25 +145,69 @@ All of these are actually stored in the object we just created, and we can autom
 
 **Degrees of Freedom** 
 
-> r round(t_test_object$parameter, digits = 2)
+```{=html}
+<div class="sourceCode">
+<pre class="sourceCode markdown">
+<code class="sourceCode markdown">
+&#96;r round(t_test_object$parameter, digits = 2)&#96. 
+</code>
+</pre>
+</div>
+```
 
-> `r round(t_test_object$parameter, digits = 2)`
+::: border
+`r round(t_test_object$parameter, digits = 2)`
+:::
 
 **The t-value**
 
-> r round(t_test_object$statistic, digits = 2)
 
-> `r round(t_test_object$statistic, digits = 2)`
+```{=html}
+<div class="sourceCode">
+<pre class="sourceCode markdown">
+<code class="sourceCode markdown">
+&#96;r round(t_test_object$statistic, digits = 2)&#96. 
+</code>
+</pre>
+</div>
+```
+
+::: border
+`r round(t_test_object$statistic, digits = 2)`
+:::
 
 **The p-value** 
 
-> r round(t_test_object$p.value, digits = 2)
+```{=html}
+<div class="sourceCode">
+<pre class="sourceCode markdown">
+<code class="sourceCode markdown">
+&#96;r round(t_test_object$p.value, digits = 2)&#96. 
+</code>
+</pre>
+</div>
+```
 
-> `r round(t_test_object$p.value, digits = 2)`
+::: border
+`r round(t_test_object$p.value, digits = 2)`
+:::
 
 **All together**
 
-> t(r round(t_test_object$parameter, digits = 2)) = r round(t_test_object$statistic, digits = 2), p = r round(t_test_object$p.value, digits = 2)
+```{=html}
+<div class="sourceCode">
+<pre class="sourceCode markdown">
+<code class="sourceCode markdown">
+t = (&#96;r round(t_test_object$parameter, digits = 2)&#96) =
+&#96;r round(t_test_object$statistic, digits = 2)&#96, p = 
+&#96;r round(t_test_object$p.value, digits = 2)&#96.   
+</code>
+</pre>
+</div>
+```
 
-> t(`r round(t_test_object$parameter, digits = 2)`) = `r round(t_test_object$statistic, digits = 2)`, p = `r round(t_test_object$p.value, digits = 2)`
-
+::: border
+t = (`r round(t_test_object$parameter, digits = 2)`) =
+`r round(t_test_object$statistic, digits = 2)`, p = 
+`r round(t_test_object$p.value, digits = 2)`.   
+:::
