@@ -1,18 +1,33 @@
 ---
 title: "What is open science?"
 author: 
-  - Joseph V. Casillas
-  - url: https://www.jvcasillas.com
-  - affiliation: Rutgers University
-  - affiliation-url: www.rutgers.edu
+  - name: Joseph V. Casillas
+    url: https://www.jvcasillas.com
+    affiliation: Rutgers University
+    affiliation-url: www.rutgers.edu
 citation: 
   url: https://FOSIL-project.github.io/what-is-open-science/index.html
-date: "2023-02-21"
+date: 2023-02-21
 categories: [info]
 image: "open_science_wug.png"
 description: |
   A quick primer on Open Science and reproducible research.
 ---
+
+```{r}
+#| label: lang-opts
+#| results: 'asis'
+#| echo: false
+
+# Source dropdown function
+source(here::here("scripts", "01_language_dropdown.R"))
+
+# Generate button
+print_list(
+  butt_text = "Language", 
+  dir = "what-is-open-science"
+  )
+```
 
 ```{r}
 #| label: setup
@@ -25,6 +40,8 @@ library("tidyr")
 library("stringr")
 ```
 
+
+</br>
 
 What is open science?
 @parsons2022community provide the following definition: 
@@ -84,3 +101,15 @@ See @fig-open-science-wiki
 #| fig.cap: This is a caption
 knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Osc2021-unesco-open-science-no-gray.png/640px-Osc2021-unesco-open-science-no-gray.png")
 ```
+
+
+<!--
+Open science is an approach to research that emphasizes making research transparent, accessible, and collaborative. It involves sharing research materials, data, and findings openly with others, and using open-source software and tools to enable collaboration and replication.
+
+The goal of open science is to increase the quality and impact of research by allowing others to scrutinize and build upon research findings. This helps to ensure that research is trustworthy and reproducible, and that it benefits society as a whole.
+
+Open science also promotes diversity and inclusivity in research, by making research more accessible to a wider range of people and enabling participation from different perspectives.
+
+Overall, open science is a movement that seeks to make research more transparent, inclusive, and collaborative, with the ultimate goal of advancing knowledge and benefiting society as a whole.
+
+--> 

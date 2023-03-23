@@ -1,18 +1,16 @@
 ---
 title: "Preregistration"
 author: 
-  - Jiawei Shao
-  - url: 
-  - affiliation: Rutgers University
-  - affiliation-url: www.rutgers.edu
-  - Adrija Gadamsetty
-  - url: 
-  - affiliation: Rutgers University
-  - affiliation-url: www.rutgers.edu
-  - Katherine Taveras
-  - url: 
-  - affiliation: Rutgers University
-  - affiliation-url: www.rutgers.edu
+  - name: Jiawei Shao
+    url: https://span-port.rutgers.edu/people/ph-d-students-tas/graduate-students/129-current-students-phd-in-bilingualismsla/1033-jiawei-shao
+    affiliation: Rutgers University
+    affiliation-url: www.rutgers.edu
+  - name: Adrija Gadamsetty
+    affiliation: Rutgers University
+    affiliation-url: www.rutgers.edu
+  - name: Katherine Taveras
+    affiliation: Rutgers University
+    affiliation-url: www.rutgers.edu
 citation:
   url: https://fosil-project.github.io/preregistration/index.html
 date: "2023-11-21"

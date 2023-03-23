@@ -2,6 +2,7 @@
 title: "About"
 image: ./img/fosil-project.png
 page-layout: full
+citation: false
 about:
   id: hero-heading
   template: trestles

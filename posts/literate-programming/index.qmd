@@ -1,14 +1,13 @@
 ---
 title: "Literate programming"
 author: 
-  - Kyle Parrish
-  - url: https://kparrish92.github.io/
-  - affiliation: Rutgers University
-  - affiliation-url: www.rutgers.edu
-  - Isabelle Chang
-  - url: www.rutgers.edu
-  - affiliation: Rutgers University
-  - affiliation-url: www.rutgers.edu
+  - name: Kyle Parrish
+    url: https://kparrish92.github.io/
+    affiliation: Rutgers University
+    affiliation-url: www.rutgers.edu
+  - name: Isabelle Chang
+    affiliation: Rutgers University
+    affiliation-url: www.rutgers.edu
 citation: 
   url: https://fosil-project.github.io/literate-programming/index.html
 date: "2023-02-20"

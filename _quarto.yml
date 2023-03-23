@@ -25,3 +25,7 @@ format:
 
 bibliography: 
   - references.bib
+
+citation:
+  container-title: "FOSIL"
+google-scholar: false
