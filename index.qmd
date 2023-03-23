@@ -6,16 +6,6 @@ citation: false
 
 <br>
 
-```{r}
-#| label: logo
-#| fig.align: center
-#| out.width: "50%"
-#| echo: false
-#| eval: false
-
-knitr::include_graphics(here::here("img", "fosil_wug_black.png"))
-```
-
 <!--
 https://stackoverflow.com/questions/7844399/responsive-image-map
 -->
