@@ -2,12 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.335">
+<meta name="generator" content="quarto-1.3.433">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Ivan Andreu Rascón">
-<meta name="author" content="Isabelle Chang">
 <meta name="description" content="Why you should share your data.">
 
 <title>Fostering Open Science in Linguistics - Open data</title>
@@ -20,7 +19,7 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
 </style>
@@ -58,7 +57,8 @@ ul.task-list li input[type="checkbox"] {
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 
@@ -77,26 +77,28 @@ ul.task-list li input[type="checkbox"] {
     <span class="navbar-title">Fostering Open Science in Linguistics</span>
     </a>
   </div>
+            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../about.html">
+    <a class="nav-link" href="../../about.html" rel="" target="">
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../tutorials.html">
+    <a class="nav-link" href="../../tutorials.html" rel="" target="">
  <span class="menu-text">Tutorials</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/"><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/" rel="" target=""><i class="bi bi-github" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
 </ul>
-              <div id="quarto-search" class="" title="Search"></div>
+            <div class="quarto-navbar-tools">
+</div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
@@ -120,21 +122,11 @@ ul.task-list li input[type="checkbox"] {
   </div>
     
   <div class="quarto-title-meta-author">
-    <div class="quarto-title-meta-heading">Authors</div>
+    <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-heading">Affiliation</div>
     
       <div class="quarto-title-meta-contents">
-      <a href="https://span-port.rutgers.edu/people/ph-d-students-tas/graduate-students/129-current-students-phd-in-bilingualismsla/980-andreu-rascon-ivan">Ivan Andreu Rascón</a> 
-    </div>
-      <div class="quarto-title-meta-contents">
-          <p class="affiliation">
-              <a href="www.rutgers.edu">
-              Rutgers University
-              </a>
-            </p>
-        </div>
-        <div class="quarto-title-meta-contents">
-      Isabelle Chang 
+      <p class="author"><a href="https://span-port.rutgers.edu/people/ph-d-students-tas/graduate-students/129-current-students-phd-in-bilingualismsla/980-andreu-rascon-ivan">Ivan Andreu Rascón</a> </p>
     </div>
       <div class="quarto-title-meta-contents">
           <p class="affiliation">
@@ -167,7 +159,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#why-make-your-data-publicly-available" id="toc-why-make-your-data-publicly-available" class="nav-link active" data-scroll-target="#why-make-your-data-publicly-available">Why make your data publicly available?</a></li>
+  <li><a href="#the-importance-of-open-data" id="toc-the-importance-of-open-data" class="nav-link active" data-scroll-target="#the-importance-of-open-data">The importance of Open data</a></li>
+  <li><a href="#sources-of-open-linguistic-data." id="toc-sources-of-open-linguistic-data." class="nav-link" data-scroll-target="#sources-of-open-linguistic-data.">Sources of Open Linguistic Data.</a>
+  <ul class="collapse">
+  <li><a href="#why-make-your-data-publicly-available" id="toc-why-make-your-data-publicly-available" class="nav-link" data-scroll-target="#why-make-your-data-publicly-available">Why make your data publicly available?</a></li>
+  <li><a href="#challenges-and-considerations" id="toc-challenges-and-considerations" class="nav-link" data-scroll-target="#challenges-and-considerations">Challenges and considerations</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -177,51 +174,104 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>Open data in linguistics has been recently postulated to fuel ethical research practices triggered by the reproducibility crisis in the field. A crisis in research can be defined as a situation in which many research studies cannot be reproduced due to the lack of supporting materials. Although major publishing journals now require access to raw data, this is not unique to linguistics, as it mirrors the reproducibility crisis experienced in fields such as biology or psychology.</p>
-<p>Access to raw data and the entire process of decision-making is a need in linguistics, as the ability to trust and construct on previous knowledge is the fundamental tool of research development. In this tutorial, we explain why and how you can do this and become a better researcher.</p>
+<p>The recent reproducibility crisis in fields ranging from linguistics to biology underscores the urgent need for open data. Such a crisis arises when many studies cannot be replicated due to a lack of accessible supporting materials. To maintain ethical standards and ensure research outcomes can be built upon, major academic journals now mandate the provision of raw data. In linguistics, especialy, open data is not just about transparency—it’s about fostering trust, promoting cross-disciplinary collaboration, and democratizing knowledge. Embracing open data is, thus, essential for researchers aiming to contribute effectively to the discipline and the broader scientific community.</p>
+<section id="the-importance-of-open-data" class="level1">
+<h1>The importance of Open data</h1>
+<ol type="1">
+<li><p>Transparency: The world of linguistics, like any other scientific domain, needs transparent research. Open data paves the way for this transparency. It not only offers a clear window into the datasets but also ensures that the methodologies and results derived from these datasets are open for scrutiny. By doing so, it enables researchers and enthusiasts alike to understand, critique, and validate the vast expanse of linguistic studies.</p></li>
+<li><p>Collaboration: Language, in its very essence, is a tool for communication and collaboration. It is only fitting that the study of language embodies these principles as well. Open data acts as a conduit for interdisciplinary projects. It opens the field-specific liminations, enabling global collaboration among linguists, thereby enriching the research outcomes with diverse perspectives.</p></li>
+<li><p>Replicability: One of the cornerstones of robust research is the ability for its findings to be verified and replicated by independent entities. Open data ensures this replicability. With the data at their fingertips, researchers can cross-check findings, delve deeper into the datasets, and reaffirm the results, solidifying the integrity of the research.</p></li>
+<li><p>Accelerating Research: Researches should be servants to sociecty and progress. A way of helping progress is helping other research teams. Gathering data can often be a painstaking and time-consuming process. Open data provides a solution to this bottleneck. By giving researchers direct access to expansive datasets, it drastically reduces the time and resources traditionally invested in data collection.</p></li>
+</ol>
+</section>
+<section id="sources-of-open-linguistic-data." class="level1">
+<h1>Sources of Open Linguistic Data.</h1>
 <div class="cell">
 <div class="cell-output-display">
 <div id="fig-open-science-benefits" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="open_science.png" class="img-fluid figure-img" width="1272"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;1: This is a caption</figcaption><p></p>
+<figcaption class="figure-caption">Figure&nbsp;1: This is a caption</figcaption>
 </figure>
 </div>
 </div>
 </div>
 <section id="why-make-your-data-publicly-available" class="level2">
 <h2 class="anchored" data-anchor-id="why-make-your-data-publicly-available">Why make your data publicly available?</h2>
-<p>Making data available, as well as the entire decision-making process, is a necessary practice not only to account for variability in results due to the decision making process, but also to inappropriate research techniques, such as HARKing, p-hacking, and selective reporting of positive results. Sharing your data and making it publicly available has a triangular benefit, as it benefits the researcher, the community, and society. Starting with the researcher, it enhances visibility, as it is becoming a growing strength, reduces inefficiencies, improves connections, and, more importantly, makes you, the researcher, gain greater recognition, credibility, validity, and discoverability. Additionally, it benefits the research community, as your data and procedures can be used to form new researchers, reduce unnecessary experiments, improve long-term archiving, and, more significantly, enable replication. Finally, we can inform society by enabling public understanding, promoting science, increasing innovation, and providing the world with easier access to our findings.</p>
-<p>Linguistics is still developing a posture regarding open science and data availability. Several initiatives are trying to increase the accessibility of raw data extracted from research studies, incentivizing the voluntary sharing of all materials and procedures used during the research process.</p>
-<p>Privately, storing your data over time can be more complicated than you might think. Storage drives can get lost, but if they do not, a hard drive will fail at some point, this is an unavoidable problem associated with the aging of technology.</p>
-<p>So, what can you do to protect your linguistic data?</p>
-<p>As with everything in life, as a researcher, you can make your data available in several ways and degrees, depending on the focus of your research project. An extended platform is OSF, https://osf.io/, a Web tool designed to help researchers collaboratively manage, store, and share their research process and files related to their research.</p>
-<p>Sharing your data publicly also allows the preservation of the data for future reanalysis. Nevertheless, the linguistic field and language study is broad, with plenty of variabilities and degrees. Therefore, a general concern lies in the ability to share data related to human subject participants. To answer this question, you first need to look at your kind of study: is it a lab phonetics study? Is it a sociolinguistics video interview? Is it an eye-tracking study?</p>
-<p>While sharing data from phonetics studies is more accessible, as identifiers can be easily removed, other linguistics branches, such as sociolinguistics, which might involve video recordings of the participants, could represent a more significant concern. Some alternatives to make your data publicly available are submitting transcriptions, removing any video components, or signing waivers with participants who took the study. Of course, the ultimate decision must be taken according to the legality and the researcher’s criteria.</p>
-<p>As a PI, you should decide what information can make your research more reproducible and share as much information as possible so you, your research community, and society can understand your work more deeply.</p>
+<p>In the digital age, traditional linguistic research methods are evolving and placing a stronger emphasis on open and easily accessible data for everyone.<br>
+The change affects individual researchers, the academic community, and society.</p>
+<p><strong>The Imperative of Data Sharing:</strong></p>
+<ul>
+<li><strong>For Researchers:</strong> Sharing data elevates a researcher’s academic profile. By doing so:
+<ul>
+<li>They gain enhanced <strong>visibility</strong>, positioning themselves prominently in an evolving academic landscape.</li>
+<li>They can tap into a network of like-minded professionals, triggering <strong>collaborations</strong>.</li>
+<li>They witness augmented <strong>credibility</strong> and <strong>discoverability</strong>, with their work now becoming a reference point for peers.</li>
+</ul></li>
+<li><strong>For the Research Community:</strong> Open data serves as a catalyst for:
+<ul>
+<li><strong>Training</strong> the next generation of researchers, offering them rich and better datasets for exploration.</li>
+<li>Avoiding <strong>redundancies</strong> in experiments, optimizing resource utilization.</li>
+<li>Ensuring robust <strong>archiving</strong> practices, preserving research for posterity.</li>
+<li>And critically, facilitating <strong>replication</strong>, a key point of verifiable research.</li>
+</ul></li>
+<li><strong>For Society:</strong> Publicly available data has broader societal ramifications. It:
+<ul>
+<li>Educates the <strong>public</strong>, bridging the gap between complex linguistic phenomena and general understanding.</li>
+<li>Fuels <strong>innovation</strong>, with businesses and tech sectors leveraging linguistic insights.</li>
+<li>Ensures <strong>democratized access</strong> to research, fostering a knowledge-driven society.</li>
+</ul></li>
+</ul>
+<p>As linguistics recalibrates its approach to open science, there is a collective push towards increasing transparency. Initiatives worldwide now prioritize the sharing of raw data, methodologies, and research tools.</p>
+<p><strong>Navigating the Landscape of Open Linguistic Data Sources:</strong></p>
+<p>While sourcing is crucial, data preservation remains a challenge. Traditional storage methods, such as hard drives, are prone to failures</p>
+<ul>
+<li><strong>Repositories:</strong> Established platforms house vast troves of linguistic data. To name a few:
+<ul>
+<li><strong>Linguistic Data Consortium (LDC):</strong> An institution that curates diverse datasets, encompassing varied linguistic elements from speech patterns to text nuances.</li>
+<li><strong>Universal Dependencies Project:</strong> A key resource for those studying grammar and syntax, offering detailed treebank data for numerous languages.</li>
+<li><strong>Open Science Framework:</strong> Is a platform designed to support transparent and collective scientific endeavors. Offered as a complimentary, open-source tool by the Center for Open Science, researchers can utilize the OSF to chronicle their projects, team up with peers, and disseminate their data and outcomes. Aditionally, researchers can also create preprints accessible to the public even as the project undergoes peer review in a journal.</li>
+</ul></li>
+</ul>
+</section>
+<section id="challenges-and-considerations" class="level2">
+<h2 class="anchored" data-anchor-id="challenges-and-considerations">Challenges and considerations</h2>
+<p>In the linguistic research, there are various challenges and considerations to account for, and among these, a key issue is the durability and accessibility of the data.</p>
+<ol type="1">
+<li><p><strong>Data Quality</strong>: Ensuring that the data collected is accurate, consistent, and complete is essential. <strong>Accuracy</strong> which can refer to pertains the data’s veracity, while <strong>consistency</strong> ensures uniformity in data collection and representation. <strong>Completeness</strong> guarantees that the data provides a complete view as possible, and no essential details are omitted.</p></li>
+<li><p><strong>Representation</strong>: With the endless linguistic diversity in the world we life in. It becomes necessary to collaborate in every language, minority languages and dialects are adequately represented.</p></li>
+<li><p><strong>Ethics</strong>: Protecting participant privacy should also be key point. This involves obtaining <strong>consent</strong>, safeguarding privacy, and demonstrating <strong>cultural sensitivity</strong>. In the diverse field of linguistics, the type of data collected can span a spectrum from lab-based phonetics experiments to sociolinguistic video interviews. Consequently, the inherent characteristics of the data differ substantially. For example, data stemming from phonetic experiments can be conveniently de-identified, whereas disseminating video materials from sociolinguistic posses more ethical issues. Potential strategies to address these concerns encompass providing textual transcriptions, excluding video content, or procuring formal consents from study participants. Crucially, any determinations must attend the importance of safeguarding participants’ well-being and confidentiality, all the while adhering to legal prescriptions and the ethical discernment of the researcher.</p></li>
+<li><p><strong>Standardization</strong>: Here, transcription, and data storage practices come into play. These ensure that the data is universally understandable and ensures that the data can be utilized by other researchers for replication or further exploration.</p></li>
+</ol>
+<p>On the topic of <strong>data storage</strong>, an unavoidable dilemma associated with the aging of technology is the failure of storage drives. Privately storing data over extended periods is trickier than one might assume. Drives can get lost, and even if they do not, hard drive failures are inevitable over time. So, how does one safeguard their invaluable linguistic data? One feasible solution is making the data public. Not only does this promote data preservation for future reanalysis, but it also encourages transparency in research.</p>
+<p>Given the presented variability in the linguistic field, the decision to share data, especially data related to human subjects, warrants careful consideration. It becomes vital to assess the kind of study you’re conducting: whether it’s phonetics, a sociolinguistic interview, or an eye-tracking study.</p>
+<p>As a principal investigator (PI), your objective should be achieving research reproducibility. You should as much information as feasible, enabling the broader research community and society to gain a profound understanding of your work.</p>
+<hr>
 <p>To sum up, open data is important in scientific research for several reasons:</p>
 <ol type="1">
-<li>Reproducibility: Open data allows other researchers to access and verify the findings of a study. This is important for ensuring the reproducibility of scientific research.</li>
-<li>Collaboration: Open data allows researchers from different disciplines and institutions to collaborate on research projects. This can lead to new insights and discoveries that might not have been possible otherwise.</li>
-<li>Efficiency: Open data can help to reduce duplication of effort and resources by allowing researchers to build upon the work of others. This can lead to faster and more efficient scientific progress.</li>
-<li>Transparency: Open data promotes transparency in scientific research by allowing others to see the raw data behind the conclusions of a study. This can help to reduce the potential for bias or fraud.</li>
-<li>Innovation: Open data can lead to new and unexpected discoveries by allowing researchers to explore data sets in new ways or apply new techniques to existing data.</li>
+<li>Linguistic research is increasingly emphasizing open and accessible data.</li>
+<li>Data sharing boosts researcher credibility and fosters collaboration.</li>
+<li>Global initiatives are pushing for greater transparency in sharing.</li>
+<li>Data preservation is challenging; notable repositories exist to help.</li>
+<li>Ethical considerations, especially around participant privacy, are crucial.</li>
+<li>Technological failures necessitate innovative data storage solutions.</li>
+<li>Decision to share data should consider study type and aim for reproducibility.</li>
 </ol>
-<p>Overall, open data can help to improve the quality and impact of scientific research by promoting transparency, collaboration, and innovation.</p>
 
 
 </section>
+</section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{andreurascón2023,
-  author = {Ivan Andreu Rascón and Isabelle Chang},
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{andreu rascón2023,
+  author = {Andreu Rascón, Ivan},
   title = {Open Data},
   date = {2023-03-21},
   url = {https://FOSIL-project.github.io/open-data/index.html},
   langid = {en}
 }
-</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-andreurascón2023" class="csl-entry quarto-appendix-citeas" role="doc-biblioentry">
-Ivan Andreu Rascón, and Isabelle Chang. 2023. <span>“Open Data.”</span>
-FOSIL. March 21, 2023. <a href="https://FOSIL-project.github.io/open-data/index.html">https://FOSIL-project.github.io/open-data/index.html</a>.
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-andreu rascón2023" class="csl-entry quarto-appendix-citeas" role="listitem">
+Andreu Rascón, Ivan. 2023. <span>“Open Data.”</span> FOSIL. March 21,
+2023. <a href="https://FOSIL-project.github.io/open-data/index.html">https://FOSIL-project.github.io/open-data/index.html</a>.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -250,9 +300,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -317,6 +381,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {

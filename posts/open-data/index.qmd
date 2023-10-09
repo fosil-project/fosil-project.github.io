@@ -5,9 +5,6 @@ author:
     url: https://span-port.rutgers.edu/people/ph-d-students-tas/graduate-students/129-current-students-phd-in-bilingualismsla/980-andreu-rascon-ivan
     affiliation: Rutgers University
     affiliation-url: www.rutgers.edu
-  - name: Isabelle Chang
-    affiliation: Rutgers University
-    affiliation-url: www.rutgers.edu
 citation: 
   url: https://FOSIL-project.github.io/open-data/index.html
 date: "2023-03-21"
@@ -17,9 +14,41 @@ description: |
   Why you should share your data.
 ---
 
-Open data in linguistics has been recently postulated to fuel ethical research practices triggered by the reproducibility crisis in the field. A crisis in research can be defined as a situation in which many research studies cannot be reproduced due to the lack of supporting materials. Although major publishing journals now require access to raw data, this is not unique to linguistics, as it mirrors the reproducibility crisis experienced in fields such as biology or psychology. 
+The recent reproducibility crisis in fields ranging from linguistics to biology underscores the urgent need for open data. 
+Such a crisis arises when many studies cannot be replicated due to a lack of accessible supporting materials. 
+To maintain ethical standards and ensure research outcomes can be built upon, major academic journals now mandate the provision of raw data. 
+In linguistics, especialy, open data is not just about transparency—it's about fostering trust, promoting cross-disciplinary collaboration, and democratizing knowledge. 
+Embracing open data is, thus, essential for researchers aiming to contribute effectively to the discipline and the broader scientific community.
 
-Access to raw data and the entire process of decision-making is a need in linguistics, as the ability to trust and construct on previous knowledge is the fundamental tool of research development. In this tutorial, we explain why and how you can do this and become a better researcher.
+# The importance of Open data
+
+1. Transparency: The world of linguistics, like any other scientific domain, needs transparent research. 
+Open data paves the way for this transparency. 
+It not only offers a clear window into the datasets but also ensures that the methodologies and results derived from these datasets are open for scrutiny. 
+By doing so, it enables researchers and enthusiasts alike to understand, critique, and validate the vast expanse of linguistic studies.
+
+2. Collaboration: Language, in its very essence, is a tool for communication and collaboration. 
+It is only fitting that the study of language embodies these principles as well. 
+Open data acts as a conduit for interdisciplinary projects. 
+It opens the field-specific liminations, enabling global collaboration among linguists, thereby enriching the research outcomes with diverse perspectives.
+
+3. Replicability: One of the cornerstones of robust research is the ability for its findings to be verified and replicated by independent entities. Open data ensures this replicability. 
+With the data at their fingertips, researchers can cross-check findings, delve deeper into the datasets, and reaffirm the results, solidifying the integrity of the research.
+
+4. Accelerating Research: Researches should be servants to sociecty and progress.
+A way of helping progress is helping other research teams. 
+Gathering data can often be a painstaking and time-consuming process. 
+Open data provides a solution to this bottleneck. 
+By giving researchers direct access to expansive datasets, it drastically reduces the time and resources traditionally invested in data collection. 
+
+
+# Sources of Open Linguistic Data. 
+
+
+
+
+
+
 
 ```{r}
 #| label: fig-open-science-benefits
@@ -30,46 +59,84 @@ knitr::include_graphics("open_science.png")
 
 ## Why make your data publicly available?
 
-Making data available, as well as the entire decision-making process, is a necessary practice not only to account for variability in results due to the decision making process, but also to inappropriate research techniques, such as HARKing, p-hacking, and selective reporting of positive results.
-Sharing your data and making it publicly available has a triangular benefit, as it benefits the researcher, the community, and society. Starting with the researcher, it enhances visibility, as it is becoming a growing strength, reduces inefficiencies, improves connections, and, more importantly, makes you, the researcher, gain greater recognition, credibility, validity, and discoverability.
-Additionally, it benefits the research community, as your data and procedures can be used to form new researchers, reduce unnecessary experiments, improve long-term archiving, and, more significantly, enable replication.
-Finally, we can inform society by enabling public understanding, promoting science, increasing innovation, and providing the world with easier access to our findings.
+In the digital age, traditional linguistic research methods are evolving and placing a stronger emphasis on open and easily accessible data for everyone.  
+The change affects individual researchers, the academic community, and society.
+
+**The Imperative of Data Sharing:**
+
+- **For Researchers:** Sharing data elevates a researcher's academic profile. By doing so:
+  * They gain enhanced **visibility**, positioning themselves prominently in an evolving academic landscape.
+  * They can tap into a network of like-minded professionals, triggering **collaborations**.
+  * They witness augmented **credibility** and **discoverability**, with their work now becoming a reference point for peers.
+  
+- **For the Research Community:** Open data serves as a catalyst for:
+  * **Training** the next generation of researchers, offering them rich and better datasets for exploration.
+  * Avoiding **redundancies** in experiments, optimizing resource utilization.
+  * Ensuring robust **archiving** practices, preserving research for posterity.
+  * And critically, facilitating **replication**, a key point of verifiable research.
+
+- **For Society:** Publicly available data has broader societal ramifications. It:
+  * Educates the **public**, bridging the gap between complex linguistic phenomena and general understanding.
+  * Fuels **innovation**, with businesses and tech sectors leveraging linguistic insights.
+  * Ensures **democratized access** to research, fostering a knowledge-driven society.
+
+As linguistics recalibrates its approach to open science, there is a collective push towards increasing transparency. 
+Initiatives worldwide now prioritize the sharing of raw data, methodologies, and research tools.
+
+**Navigating the Landscape of Open Linguistic Data Sources:**
+
+While sourcing is crucial, data preservation remains a challenge. Traditional storage methods, such as hard drives, are prone to failures
+
+* **Repositories:** Established platforms house vast troves of linguistic data. 
+To name a few:
+  * **Linguistic Data Consortium (LDC):** An institution that curates diverse datasets, encompassing varied linguistic elements from speech patterns to text nuances.
+  * **Universal Dependencies Project:** A key resource for those studying grammar and syntax, offering detailed treebank data for numerous languages.
+  * **Open Science Framework:** Is a platform designed to support transparent and collective scientific endeavors. 
+  Offered as a complimentary, open-source tool by the Center for Open Science, researchers can utilize the OSF to chronicle their projects, team up with peers, and disseminate their data and outcomes. 
+  Aditionally, researchers can also create preprints accessible to the public even as the project undergoes peer review in a journal.
+
+
+## Challenges and considerations 
+
+In the linguistic research, there are various challenges and considerations to account for, and among these, a key issue is the durability and accessibility of the data.
+
+1. **Data Quality**: Ensuring that the data collected is accurate, consistent, and complete is essential. **Accuracy** which can refer to pertains the data's veracity, while **consistency** ensures uniformity in data collection and representation. **Completeness** guarantees that the data provides a complete view as possible, and no essential details are omitted.
+
+2. **Representation**: With the endless linguistic diversity in the world we life in. 
+It becomes necessary to collaborate in every language, minority languages and dialects are adequately represented. 
+
+3. **Ethics**: Protecting participant privacy should also be key point. 
+This involves obtaining **consent**, safeguarding privacy, and demonstrating **cultural sensitivity**. 
+In the diverse field of linguistics, the type of data collected can span a spectrum from lab-based phonetics experiments to sociolinguistic video interviews. 
+Consequently, the inherent characteristics of the data differ substantially. 
+For example, data stemming from phonetic experiments can be conveniently de-identified, whereas disseminating video materials from sociolinguistic posses more ethical issues. 
+Potential strategies to address these concerns encompass providing textual transcriptions, excluding video content, or procuring formal consents from study participants. 
+Crucially, any determinations must attend the importance of safeguarding participants' well-being and confidentiality, all the while adhering to legal prescriptions and the ethical discernment of the researcher.
+
+4. **Standardization**: Here, transcription, and data storage practices come into play. 
+These ensure that the data is universally understandable and ensures that the data can be utilized by other researchers for replication or further exploration.
+
+On the topic of **data storage**, an unavoidable dilemma associated with the aging of technology is the failure of storage drives. 
+Privately storing data over extended periods is trickier than one might assume. 
+Drives can get lost, and even if they do not, hard drive failures are inevitable over time. 
+So, how does one safeguard their invaluable linguistic data? One feasible solution is making the data public. 
+Not only does this promote data preservation for future reanalysis, but it also encourages transparency in research.
+
+Given the presented variability in the linguistic field, the decision to share data, especially data related to human subjects, warrants careful consideration. 
+It becomes vital to assess the kind of study you're conducting: whether it's phonetics, a sociolinguistic interview, or an eye-tracking study. 
+
+As a principal investigator (PI), your objective should be achieving research reproducibility. 
+You should as much information as feasible, enabling the broader research community and society to gain a profound understanding of your work.
 
 
 
-Linguistics is still developing a posture regarding open science and data availability. 
-Several initiatives are trying to increase the accessibility of raw data extracted from research studies, incentivizing the voluntary sharing of all materials and procedures used during the research process.  
-
-
-
-
-
-
-
-Privately, storing your data over time can be more complicated than you might think. Storage drives can get lost, but if they do not, a hard drive will fail at some point, this is an unavoidable problem associated with the aging of technology. 
-
-So, what can you do to protect your linguistic data?
-
-As with everything in life, as a researcher, you can make your data available in several ways and degrees, depending on the focus of your research project. An extended platform is OSF, https://osf.io/, a Web tool designed to help researchers collaboratively manage, store, and share their research process and files related to their research. 
-
-Sharing your data publicly also allows the preservation of the data for future reanalysis. 
-Nevertheless, the linguistic field and language study is broad, with plenty of variabilities and degrees. Therefore, a general concern lies in the ability to share data related to human subject participants. To answer this question, you first need to look at your kind of study: is it a lab phonetics study? Is it a sociolinguistics video interview? Is it an eye-tracking study? 
-
-While sharing data from phonetics studies is more accessible, as identifiers can be easily removed, other linguistics branches, such as sociolinguistics, which might involve video recordings of the participants, could represent a more significant concern. Some alternatives to make your data publicly available are submitting transcriptions, removing any video components, or signing waivers with participants who took the study. Of course, the ultimate decision must be taken according to the legality and the researcher's criteria. 
-
-As a PI, you should decide what information can make your research more reproducible and share as much information as possible so you, your research community, and society can understand your work more deeply. 
-
-
-
-
-
-
+****
 To sum up, open data is important in scientific research for several reasons:
 
-1. Reproducibility: Open data allows other researchers to access and verify the findings of a study. This is important for ensuring the reproducibility of scientific research.
-2. Collaboration: Open data allows researchers from different disciplines and institutions to collaborate on research projects. This can lead to new insights and discoveries that might not have been possible otherwise.
-3. Efficiency: Open data can help to reduce duplication of effort and resources by allowing researchers to build upon the work of others. This can lead to faster and more efficient scientific progress.
-4. Transparency: Open data promotes transparency in scientific research by allowing others to see the raw data behind the conclusions of a study. This can help to reduce the potential for bias or fraud.
-5. Innovation: Open data can lead to new and unexpected discoveries by allowing researchers to explore data sets in new ways or apply new techniques to existing data.
-
-Overall, open data can help to improve the quality and impact of scientific research by promoting transparency, collaboration, and innovation.
+1. Linguistic research is increasingly emphasizing open and accessible data.
+2. Data sharing boosts researcher credibility and fosters collaboration.
+3. Global initiatives are pushing for greater transparency in sharing.
+4. Data preservation is challenging; notable repositories exist to help.
+5. Ethical considerations, especially around participant privacy, are crucial.
+6. Technological failures necessitate innovative data storage solutions.
+7. Decision to share data should consider study type and aim for reproducibility.
