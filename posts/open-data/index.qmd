@@ -5,9 +5,6 @@ author:
     url: https://span-port.rutgers.edu/people/ph-d-students-tas/graduate-students/129-current-students-phd-in-bilingualismsla/980-andreu-rascon-ivan
     affiliation: Rutgers University
     affiliation-url: www.rutgers.edu
-  - name: Isabelle Chang
-    affiliation: Rutgers University
-    affiliation-url: www.rutgers.edu
 citation: 
   url: https://FOSIL-project.github.io/open-data/index.html
 date: "2023-03-21"
@@ -70,7 +67,7 @@ The change affects individual researchers, the academic community, and society.
 - **For Researchers:** Sharing data elevates a researcher's academic profile. By doing so:
   * They gain enhanced **visibility**, positioning themselves prominently in an evolving academic landscape.
   * They can tap into a network of like-minded professionals, triggering **collaborations**.
-  * They witness heightened **credibility** and **discoverability**, with their work becoming a reference point for peers.
+  * They witness augmented **credibility** and **discoverability**, with their work now becoming a reference point for peers.
   
 - **For the Research Community:** Open data serves as a catalyst for:
   * **Training** the next generation of researchers, offering them rich and better datasets for exploration.
@@ -93,8 +90,7 @@ While sourcing is crucial, data preservation remains a challenge. Traditional st
 * **Repositories:** Established platforms house vast troves of linguistic data. 
 To name a few:
   * **Linguistic Data Consortium (LDC):** An institution that curates diverse datasets, encompassing varied linguistic elements from speech patterns to text nuances.
-  * **OpenSubtitles:** A reservoir of subtitles, reflecting contemporary language use and cultural idioms.
-  * **Universal Dependencies Project:** A haven for those studying grammar and syntax, offering detailed treebank data for numerous languages.
+  * **Universal Dependencies Project:** A key resource for those studying grammar and syntax, offering detailed treebank data for numerous languages.
   * **Open Science Framework:** Is a platform designed to support transparent and collective scientific endeavors. 
   Offered as a complimentary, open-source tool by the Center for Open Science, researchers can utilize the OSF to chronicle their projects, team up with peers, and disseminate their data and outcomes. 
   Aditionally, researchers can also create preprints accessible to the public even as the project undergoes peer review in a journal.
@@ -104,7 +100,7 @@ To name a few:
 
 In the linguistic research, there are various challenges and considerations to account for, and among these, a key issue is the durability and accessibility of the data.
 
-1. **Data Quality**: Ensuring that the data collected is accurate, consistent, and complete is essential. **Accuracy** speaks to the truthfulness of the data, while **consistency** ensures uniformity in data collection and representation. **Completeness** guarantees that the data provides a holistic view, and no essential details are omitted.
+1. **Data Quality**: Ensuring that the data collected is accurate, consistent, and complete is essential. **Accuracy** which can refer to pertains the data's veracity, while **consistency** ensures uniformity in data collection and representation. **Completeness** guarantees that the data provides a complete view as possible, and no essential details are omitted.
 
 2. **Representation**: With the endless linguistic diversity in the world we life in. 
 It becomes necessary to collaborate in every language, minority languages and dialects are adequately represented. 
@@ -117,7 +113,8 @@ For example, data stemming from phonetic experiments can be conveniently de-iden
 Potential strategies to address these concerns encompass providing textual transcriptions, excluding video content, or procuring formal consents from study participants. 
 Crucially, any determinations must attend the importance of safeguarding participants' well-being and confidentiality, all the while adhering to legal prescriptions and the ethical discernment of the researcher.
 
-4. **Standardization**: This is a realm where consistent annotation, transcription, and data storage practices come into play. These ensure that the data is universally understandable and can be efficiently utilized by other researchers for replication or further exploration.
+4. **Standardization**: Here, transcription, and data storage practices come into play. 
+These ensure that the data is universally understandable and ensures that the data can be utilized by other researchers for replication or further exploration.
 
 On the topic of **data storage**, an unavoidable dilemma associated with the aging of technology is the failure of storage drives. 
 Privately storing data over extended periods is trickier than one might assume. 
