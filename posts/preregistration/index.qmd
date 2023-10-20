@@ -34,7 +34,7 @@ source(here::here("scripts", "01_language_dropdown.R"))
 # Generate button
 print_list(
   butt_text = "Language", 
-  dir = "what-is-open-science"
+  dir = "preregistration"
   )
 ```
 
