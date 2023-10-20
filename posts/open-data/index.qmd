@@ -17,6 +17,23 @@ description: |
   Why you should share your data.
 ---
 
+```{r}
+#| label: lang-opts
+#| results: 'asis'
+#| echo: false
+
+# Source dropdown function
+source(here::here("scripts", "01_language_dropdown.R"))
+
+# Generate button
+print_list(
+  butt_text = "Language", 
+  dir = "what-is-open-science"
+  )
+```
+
+<br>
+
 Open data in linguistics has been recently postulated to fuel ethical research practices triggered by the reproducibility crisis in the field. A crisis in research can be defined as a situation in which many research studies cannot be reproduced due to the lack of supporting materials. Although major publishing journals now require access to raw data, this is not unique to linguistics, as it mirrors the reproducibility crisis experienced in fields such as biology or psychology. 
 
 Access to raw data and the entire process of decision-making is a need in linguistics, as the ability to trust and construct on previous knowledge is the fundamental tool of research development. In this tutorial, we explain why and how you can do this and become a better researcher.

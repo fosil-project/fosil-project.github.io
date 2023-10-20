@@ -14,6 +14,23 @@ description: |
   A new model for publishing scientific research
 ---
 
+```{r}
+#| label: lang-opts
+#| results: 'asis'
+#| echo: false
+
+# Source dropdown function
+source(here::here("scripts", "01_language_dropdown.R"))
+
+# Generate button
+print_list(
+  butt_text = "Language", 
+  dir = "what-is-open-science"
+  )
+```
+
+<br>
+
 The reproducibility crisis has drawn attention to the shortcomings of the traditional model of publishing scientific research. In the current model, researchers generate hypotheses, design studies, collect data, analyze data, interpret results, and submit their findings for publication. However, this model has been criticized for lending itself to questionable research practices (QRPs), such as p-hacking, harking, and publication bias.
 
 ## Attempts at reform

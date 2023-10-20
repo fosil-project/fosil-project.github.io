@@ -14,6 +14,22 @@ description: |
   Why you should consider posting preprints of your linguistic research.
 ---
 
+```{r}
+#| label: lang-opts
+#| results: 'asis'
+#| echo: false
+
+# Source dropdown function
+source(here::here("scripts", "01_language_dropdown.R"))
+
+# Generate button
+print_list(
+  butt_text = "Language", 
+  dir = "what-is-open-science"
+  )
+```
+
+<br>
 
 In recent years, the concept of open science has gained traction in academic circles. The idea behind open science is to make scientific research and data more accessible, transparent, and reproducible. One of the ways in which open science is being promoted is through the use of pre-prints.
 

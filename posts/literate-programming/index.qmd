@@ -20,6 +20,21 @@ code-tools: true
 code-link: true
 ---
 
+```{r}
+#| label: lang-opts
+#| results: 'asis'
+#| echo: false
+
+# Source dropdown function
+source(here::here("scripts", "01_language_dropdown.R"))
+
+# Generate button
+print_list(
+  butt_text = "Language", 
+  dir = "what-is-open-science"
+  )
+```
+
 # Overview
 
 Literate programming refers to the integration of code and prose in a reproducible document.

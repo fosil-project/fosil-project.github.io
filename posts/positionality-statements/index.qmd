@@ -18,6 +18,21 @@ description: |
   Recognizing the Researcher's Perspective in Linguistic Research
 ---
 
+```{r}
+#| label: lang-opts
+#| results: 'asis'
+#| echo: false
+
+# Source dropdown function
+source(here::here("scripts", "01_language_dropdown.R"))
+
+# Generate button
+print_list(
+  butt_text = "Language", 
+  dir = "what-is-open-science"
+  )
+```
+
 ## What is a positionality statement?
 
 A positionality statement is a reflective piece of writing that acknowledges the researcher's positionality, which encompasses their social, cultural, and personal identity, as well as their biases and assumptions. 
