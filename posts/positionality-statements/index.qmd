@@ -33,29 +33,31 @@ print_list(
   )
 ```
 
-## What is a positionality statement?
+<br>
 
-A positionality statement is a reflective piece of writing that acknowledges the researcher's positionality, which encompasses their social, cultural, and personal identity, as well as their biases and assumptions. 
-Positionality statements aim to increase transparency and promote critical self-reflection in research.
+A positionality statement is a reflective piece of writing that acknowledges the researcher's stance---or positionality---toward a research topic, framework, and even participants. 
+One's positionality encompasses their social, cultural, and personal identity, as well as their biases and assumptions [@holmes2020researcher], and can influence how research is done and how results are interpreted [@rowe2014]. 
+While positionality statements have been adopted for a while in the social sciences, they are a relatively new incorporation in the field of linguistics, appearing primarily in studies that are of a qualitative nature. 
+We advocate for developing and including positionality statements in linguistic research, as a way of increasing transparency and promoting critical self-reflection in research.
 
-Why is positionality important in research and, specifically, in linguistic research?
-Positionality is important in research because it can impact how data is collected, analyzed, and interpreted. 
+Why is important to consider one's positionality in research and, specifically, in linguistic research? 
+It is essential to consider one's positionality when conducting or engaging in research because it can impact how data is collected, analyzed, and interpreted. 
 Linguistic research, in particular, often deals with social phenomena that are influenced by language use and the cultural context in which it occurs. 
 Recognizing one's positionality in linguistic research is crucial to understanding how it might influence the research process and findings.
+
 Why should positionality statements be included in quantitative research as well?
-Traditionally, positionality statements have been more prevalent in qualitative research, but they are also important in quantitative research. 
-In quantitative research, recognizing and addressing the researcher's positionality can increase the validity of the findings. 
-Including positionality statements in quantitative research can also address diversity and inclusivity gaps, help make research more open and transparent, and promote DEIB (Diversity, Equity, Inclusion, and Belonging) initiatives.
+Traditionally, positionality statements have been more prevalent in qualitative research; nonetheless, they should be considered equally important in quantitative research. 
+Aside from contributing to ongoing efforts to promote transparency and openness in research practices, recognizing and addressing the researcher's positionality can increase the validity of the findings.
 
-## Steps for the future
+## Things to Consider
 
-To promote critical self-reflection and increase transparency in linguistic research, researchers should consider their positionality before starting a project and write a positionality statement if relevant. 
-The positionality statement can be included in additional materials if the word limit is a concern for publication. 
-By reflecting on who it is that does the research, the field of linguistics can become more diverse, inclusive, and transparent.
-
-In sum, positionality statements are important in linguistic research as they promote critical self-reflection, increase transparency, and help address diversity and inclusivity gaps. 
-Including positionality statements in quantitative research can increase the validity of findings and promote DEIB initiatives. 
+Researchers should reflect on their positionality before starting a project and write a positionality statement. 
+When submitting a study for publication, the positionality statement can be included in additional materials if the word limit is a concern. 
+Moreover, in showing their commitment to DEIB (Diversity, Equity, Inclusivity, and Belonging) initiatives, journals have started to encourage authors to include positionality statements with their submissions (see the Journal of Social and Personal Relationships).
+In sum, positionality statements are critical in linguistic research as they promote critical self-reflection, increase transparency, and help address diversity and inclusivity gaps. 
+Including positionality statements in quantitative research can increase the validity of findings. 
 By reflecting on who it is that does the research, linguistics can become a more diverse, inclusive, and transparent field.
+
 
 
 <!--
