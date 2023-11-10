@@ -22,7 +22,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -184,17 +203,18 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </div>
 <p><br></p>
-<p>खुली विज्ञान क्या है?</p>
-<p><span class="citation" data-cites="parsons2022community022">(<a href="#ref-parsons2022community022" role="doc-biblioref"><strong>parsons2022community022?</strong></a>)</span> कहता है कि:</p>
+<p>खुली विज्ञान क्या है? <span class="citation" data-cites="parsons2022community">Parsons et al. (<a href="#ref-parsons2022community" role="doc-biblioref">2022</a>)</span> कहता है कि:</p>
 <blockquote class="blockquote">
 <p>यह एक सामान्य शब्द है जो वैज्ञानिक ज्ञान का आदान-प्रदान, स्पष्ट, कठिन, पुनर्निर्माणीय, पुनर्विकसनीय, संचित और समावेशी होने का विचार करने के लिए है, जो सभी किस्म के वैज्ञानिक यातात्म्यता के महत्वपूर्ण लक्षण माने जाते हैं। मुक्त विज्ञान का अर्थ है ऐसे सिद्धांत और व्यवहार रखना जो पारदर्शी, विश्वसनीय, प्रतिलिपि प्रस्तुत करने योग्य और सुलभ विज्ञान को बढ़ावा दें। खुली विज्ञान के छह प्रमुख पहलु होते हैं : खुली डेटा, खुला उपाय, खुला स्रोत, खुली पहुंच, खुली सहयोगात्मक नवाचार, और खुले शैक्षिक संसाधन।</p>
 </blockquote>
-<p>यह सुनने में अच्छा लगता है, ना? लेकिन सवाल यह है की खुले विज्ञान पर क्यों जोर दिया जा रहा है? यह आपको चौंका सकता है, लेकिन पार्सन्स एट अल. (2022) द्वारा वर्णित पारदर्शी प्रथाएँ वैज्ञानिक शोध में आम नहीं होतीं।</p>
-<p>खुली विज्ञान की आवश्यकता को सही संदर्भ में रखने के लिए, हमें 2010 के दशक में वापस जाना होगा। इस समय के आसपास, कई अनुसंधान क्षेत्रों ने अपने मुख्य निष्कर्ष की जांच करने के लिए बड़े पैमाने पर पुनरावृत्ति परियोजनाओं की शुरुआत की। एक उदाहरण है मनोविज्ञान में एक परियोजना। इस विशेष परियोजना में यह जांची गई कि क्या वे 100 प्रभावशाली निष्कर्ष को पुनर्निर्धारित कर सकते हैं (ओपन साइंस सहयोग 2015)। उन्होंने पाया कि लगभग 53% निष्कर्ष का पुनर्निर्धारण नहीं हुआ। उल्लिखित परियोजना ने अन्य क्षेत्रों में समान बड़े पुनरावृत्ति परियोजनाओं को प्रेरित किया, जिनसे अर्थशास्त्र (Camerer एट अल. 2016), सामाजिक विज्ञान (Camerer एट अल. 2018), और कैंसर अनुसंधान (Errington एट अल. 2021) में समान नतीजे प्राप्त हुए। ये भयानक निष्कर्ष अब पुनरावृत्ति (या पुनर्उत्पादनशीलता) संकट के रूप में उल्लेख किए जाते हैं। शोधकर्ताओं ने कहा है कि संदेहास्पद अनुसंधान विधियाँ (“क्यूआरपी”), “पी-हैकिंग”, HARKing, छोटे नमूने का उपयोग, खराब सिद्धांत, पारदर्शिता की कमी, आदि ऐसे कारक थे जो आखिरकार पुनरावृत्ति संकट में मुख्य भूमिका निभाई, हालांकि संभावना है, कि अन्य कारक भी खेल रहे हों।</p>
+<p>यह सुनने में अच्छा लगता है, ना? लेकिन सवाल यह है की खुले विज्ञान पर क्यों जोर दिया जा रहा है? यह आपको चौंका सकता है, लेकिन <span class="citation" data-cites="parsons2022community">Parsons et al. (<a href="#ref-parsons2022community" role="doc-biblioref">2022</a>)</span> द्वारा वर्णित पारदर्शी प्रथाएँ वैज्ञानिक शोध में आम नहीं होतीं।</p>
+<p>खुली विज्ञान की आवश्यकता को सही संदर्भ में रखने के लिए, हमें 2010 के दशक में वापस जाना होगा। इस समय के आसपास, कई अनुसंधान क्षेत्रों ने अपने मुख्य निष्कर्ष की जांच करने के लिए बड़े पैमाने पर पुनरावृत्ति परियोजनाओं की शुरुआत की। एक उदाहरण है मनोविज्ञान में एक परियोजना। इस विशेष परियोजना में यह जांची गई कि क्या वे 100 प्रभावशाली निष्कर्ष को पुनर्निर्धारित कर सकते हैं <span class="citation" data-cites="open2015estimating">(<a href="#ref-open2015estimating" role="doc-biblioref">Open Science Collaboration 2015</a>)</span>। उन्होंने पाया कि लगभग 53% निष्कर्ष का पुनर्निर्धारण नहीं हुआ।<br>
+उल्लिखित परियोजना ने अन्य क्षेत्रों में समान बड़े पुनरावृत्ति परियोजनाओं को प्रेरित किया, जिनसे अर्थशास्त्र <span class="citation" data-cites="camerer2016evaluating">(<a href="#ref-camerer2016evaluating" role="doc-biblioref">Camerer et al. 2016</a>)</span>, सामाजिक विज्ञान <span class="citation" data-cites="camerer2018evaluating">(<a href="#ref-camerer2018evaluating" role="doc-biblioref">Camerer et al. 2018</a>)</span>, और कैंसर अनुसंधान <span class="citation" data-cites="errington2021investigating">(<a href="#ref-errington2021investigating" role="doc-biblioref">Errington et al. 2021</a>)</span> में समान नतीजे प्राप्त हुए। ये भयानक निष्कर्ष अब पुनरावृत्ति (या पुनर्उत्पादनशीलता) संकट के रूप में उल्लेख किए जाते हैं। शोधकर्ताओं ने कहा है कि संदेहास्पद अनुसंधान विधियाँ (“क्यूआरपी”), “पी-हैकिंग”, HARKing, छोटे नमूने का उपयोग, खराब सिद्धांत, पारदर्शिता की कमी, आदि ऐसे कारक थे जो आखिरकार पुनरावृत्ति संकट में मुख्य भूमिका निभाई, हालांकि संभावना है, कि अन्य कारक भी खेल रहे हों।</p>
 <aside>
 अपने अध्ययन क्षेत्र को ध्यान से विचारें। आपको लगता है कि कितने महत्वपूर्ण निष्कर्ष पुनरावृत्ति होंगे? यदि आप 100 सबसे प्रभावशाली निष्कर्षों को दोहराते हैं, तो आपको अपने क्षेत्र में आत्मविश्वास के लिए कितने निष्कर्षों की आवश्यकता होगी?
 </aside>
-<p>पुनरावृत्ति संकट के बाद हमने देखा है कि संदेहास्पद अनुसंधान विधियों के प्रभाव को कम करने के लिए वृद्धि की गई पारदर्शिता और पुनर्उत्पादनशील विधियों पर जोर दिया गया है। इसके परिणामस्वरूप विधिशास्त्रीय ढांचा और संबंधित तकनीकों ने मनोविज्ञान में शोध विधियों को पुनर्रूपीकृत किया है और इन्हें सम्बद्ध क्षेत्रों में प्रस्तुत किया गया है। यह वेबसाइट खुली विज्ञान के अभ्यासों को समझने और सभी पृष्ठभूमियों और हर स्तर पर भाषा विज्ञान के शोधकर्ताओं के लिए सुलभ और समझने योग्य बनाने के लिए समर्पित है, अनुसंधान के शुरू से लेकर वरिष्ठ शोधकर्ताओं तक।</p>
+<p>पुनरावृत्ति संकट के बाद हमने देखा है कि संदेहास्पद अनुसंधान विधियों के प्रभाव को कम करने के लिए वृद्धि की गई पारदर्शिता और पुनर्उत्पादनशील विधियों पर जोर दिया गया है। इसके परिणामस्वरूप विधिशास्त्रीय ढांचा और संबंधित तकनीकों ने मनोविज्ञान में शोध विधियों को पुनर्रूपीकृत किया है और इन्हें सम्बद्ध क्षेत्रों में प्रस्तुत किया गया है।<br>
+यह वेबसाइट खुली विज्ञान के अभ्यासों को समझने और सभी पृष्ठभूमियों और हर स्तर पर भाषा विज्ञान के शोधकर्ताओं के लिए सुलभ और समझने योग्य बनाने के लिए समर्पित है, अनुसंधान के शुरू से लेकर वरिष्ठ शोधकर्ताओं तक।</p>
 <p>इस दिशा में, हमने भाषाई शोधकर्ताओं को खुली विज्ञान में जुड़ने के लिए 7 क्षेत्रों को शामिल किया है:</p>
 <ul>
 <li>साहित्यात्मक प्रोग्रामिंग</li>
@@ -220,7 +240,24 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{laungani2023,
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-camerer2016evaluating" class="csl-entry" role="listitem">
+Camerer, Colin F, Anna Dreber, Eskil Forsell, Teck-Hua Ho, Jürgen Huber, Magnus Johannesson, Michael Kirchler, et al. 2016. <span>“Evaluating Replicability of Laboratory Experiments in Economics.”</span> <em>Science</em> 351 (6280): 1433–36. <a href="https://doi.org/10.1126/science.aaf091">https://doi.org/10.1126/science.aaf091</a>.
+</div>
+<div id="ref-camerer2018evaluating" class="csl-entry" role="listitem">
+Camerer, Colin F, Anna Dreber, Felix Holzmeister, Teck-Hua Ho, Jürgen Huber, Magnus Johannesson, Michael Kirchler, et al. 2018. <span>“Evaluating the Replicability of Social Science Experiments in Nature and Science Between 2010 and 2015.”</span> <em>Nature Human Behaviour</em> 2 (9): 637–44. <a href="https://doi.org/10.1038/s41562-018-0399-z">https://doi.org/10.1038/s41562-018-0399-z</a>.
+</div>
+<div id="ref-errington2021investigating" class="csl-entry" role="listitem">
+Errington, Timothy M, Maya Mathur, Courtney K Soderberg, Alexandria Denis, Nicole Perfito, Elizabeth Iorns, and Brian A Nosek. 2021. <span>“Investigating the Replicability of Preclinical Cancer Biology.”</span> <em>Elife</em> 10: e71601. <a href="https://doi.org/10.7554/eLife.71601">https://doi.org/10.7554/eLife.71601</a>.
+</div>
+<div id="ref-open2015estimating" class="csl-entry" role="listitem">
+Open Science Collaboration. 2015. <span>“Estimating the Reproducibility of Psychological Science.”</span> <em>Science</em> 349 (6251): aac4716. <a href="https://doi.org/10.1126/science.aac4716">https://doi.org/10.1126/science.aac4716</a>.
+</div>
+<div id="ref-parsons2022community" class="csl-entry" role="listitem">
+Parsons, Sam, Flávio Azevedo, Mahmoud M Elsherif, Samuel Guay, Owen N Shahim, Gisela H Govaart, Emma Norris, et al. 2022. <span>“A Community-Sourced Glossary of Open Scholarship Terms.”</span> <em>Nature Human Behaviour</em> 6 (3): 312–18. <a href="https://doi.org/10.1038/s41562-021-01269-4">https://doi.org/10.1038/s41562-021-01269-4</a>.
+</div>
+</div></section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{laungani2023,
   author = {Laungani, Krishita},
   title = {खुला {विज्ञानं} {क्या} {है?}},
   date = {2023-02-21},
