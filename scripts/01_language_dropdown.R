@@ -17,7 +17,8 @@ wrap_li <- function(dir) {
         lang == "index_sp" ~ "Español", 
         lang == "index_fr" ~ "Français", 
         lang == "index_cp" ~ "官話", 
-        lang == "index_ro" ~ "Română"
+        lang == "index_ro" ~ "Română", 
+        lang == "index_hi" ~ "हिंदी"
       ), 
       url = glue::glue("{value}"), 
       li  = glue::glue("<li><a class='dropdown-item' href='{url}'>{lang}</a></li>\n")
