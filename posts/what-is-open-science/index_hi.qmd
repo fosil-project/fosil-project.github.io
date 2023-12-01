@@ -11,6 +11,9 @@ categories: [info]
 image: "open_science_wug.png"
 description: |
   A quick primer on Open Science and reproducible research.
+crossref:
+  fig-title: देखें
+  fig-prefix: देखें
 ---
 
 ```{r}
@@ -83,12 +86,11 @@ library("stringr")
 
 इस वेबसाइट के माध्यम से आपको इन सभी क्षेत्रों में शुरू होने और चलने के लिए डिज़ाइन किए गए ट्यूटोरियल्स मिलेंगे, ताकि आप खुली विज्ञान के अभ्यास में शामिल हो सकें।
 
-
-See @fig-open-science-wiki
+चित्र @fig-open-science-wiki
 
 ```{r}
 #| label: fig-open-science-wiki
 #| echo: false
-#| fig.cap: This is a caption
+#| fig.cap: खुला विज्ञानं क्या है?
 knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Osc2021-unesco-open-science-no-gray.png/640px-Osc2021-unesco-open-science-no-gray.png")
 ```
